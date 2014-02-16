@@ -7,12 +7,12 @@
 	<script src="../js/image.js"></script>
 	<script src="../js/custom.js"></script>
 </head>
-<body onLoad="setImg(mylist, custompath, element)">
+<body onLoad="imagejs.setImg(mylist, custompath, element)">
 	<header>
 		<div id="controls">
-			<button type="button" onClick="previousImg(mylist, custompath, element)">Previous</button>
-			<button type="button" onClick="randomImg(mylist, custompath, element)">Random</button>
-			<button type="button" onClick="nextImg(mylist, custompath, element)">Next</button>
+			<button type="button" onClick="imagejs.previousImg(mylist, custompath, element)">Previous</button>
+			<button type="button" onClick="imagejs.randomImg(mylist, custompath, element)">Random</button>
+			<button type="button" onClick="imagejs.nextImg(mylist, custompath, element)">Next</button>
 		</div>
 	</header>
 	<main>
