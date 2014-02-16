@@ -1,20 +1,18 @@
 var position = 0;
 
-imagejs = new Object();
-
-imagejs.setImg = function(imgList, imgPath, element){
+var setImg = function(imgList, imgPath, element){
 	path = imgPath + imgList[position];
 	document.getElementById(element).src=path;
 };
 
-imagejs.randomImg = function(imgList, imgPath, element){
+var randomImg = function(imgList, imgPath, element){
 	var listLength = imgList.length;
 	var random = Math.floor((Math.random()*listLength));
 	path = imgPath + imgList[random];
 	document.getElementById(element).src=path;
 };
 
-imagejs.nextImg = function(imgList, imgPath, element){
+var nextImg = function(imgList, imgPath, element){
 	var listLength = imgList.length;
 	position = position + 1;
 	
@@ -26,7 +24,7 @@ imagejs.nextImg = function(imgList, imgPath, element){
 	document.getElementById(element).src=path;
 };
 
-imagejs.previousImg = function(imgList, imgPath, element){
+var previousImg = function(imgList, imgPath, element){
 	var listLength = imgList.length;
 	position = position - 1;
 	
