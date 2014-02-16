@@ -1,0 +1,49 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+
+main{
+	width: 80%;
+	min-width: 1000px;
+	margin: auto;
+	position: relative;
+}
+
+header{
+	height: 50px;
+	background-color: #2ecc71;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	z-index: 2;
+}
+
+header #controls{
+	display: table;
+	margin: auto;
+}
+
+button{
+	background-color: white;
+	margin-top: 10px;
+	height: 30px;
+	width: 70px;
+	border: none;
+	border-radius: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+button:hover{
+	background-color: #3498db;
+	cursor: pointer;
+}
+
+main img{
+	top: 80px;
+	max-width: 1000px;
+	margin: auto;
+	position: relative;
+	display: table;
+}

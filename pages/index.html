@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Image Viewer</title>
+	<link rel="stylesheet" type="text/css" href="../css/main.css">
+	<script src="../js/image.js"></script>
+	<script src="../js/custom.js"></script>
+</head>
+<body onLoad="setImg(mylist, custompath, element)">
+	<header>
+		<div id="controls">
+			<button type="button" onClick="previousImg(mylist, custompath, element)">Previous</button>
+			<button type="button" onClick="randomImg(mylist, custompath, element)">Random</button>
+			<button type="button" onClick="nextImg(mylist, custompath, element)">Next</button>
+		</div>
+	</header>
+	<main>
+		<img id="mainImg"/>
+	</main>
+</body>
+</html>
