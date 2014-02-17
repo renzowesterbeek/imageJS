@@ -1,13 +1,20 @@
 var position = 0;
 
+var randomPos = function(imgList, currentPos){
+	var listLength = imgList.length;
+	var random;
+	
+	random = Math.floor((Math.random()*listLength));
+	return random;
+}
+
 var setImg = function(imgList, imgPath, element){
 	path = imgPath + imgList[position];
 	document.getElementById(element).src=path;
 };
 
 var randomImg = function(imgList, imgPath, element){
-	var listLength = imgList.length;
-	var random = Math.floor((Math.random()*listLength));
+	var random = randomPos(imgList, position);
 	path = imgPath + imgList[random];
 	document.getElementById(element).src=path;
 };
